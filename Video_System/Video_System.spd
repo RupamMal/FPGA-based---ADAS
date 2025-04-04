@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <topLevel name="Video_System" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="Video_System.Onchip_Memory"
+   modelPath="Video_System.Onchip_Memory" />
+</simPackage>

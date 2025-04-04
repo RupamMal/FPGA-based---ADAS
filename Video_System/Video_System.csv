@@ -1,0 +1,15 @@
+# system info Video_System on 2018.10.31.11:32:57
+system_info:
+name,value
+DEVICE,EP4CE115F29C8
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1540965763
+#
+#
+# Files generated for Video_System on 2018.10.31.11:32:57
+files:
+filepath,kind,attributes,module,is_top
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

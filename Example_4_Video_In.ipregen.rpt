@@ -1,0 +1,489 @@
+IP Upgrade report for Example_4_Video_In
+Wed Oct 31 11:33:27 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Wed Oct 31 11:33:27 2018           ;
+; Quartus Prime Version        ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                ; Example_4_Video_In                          ;
+; Top-level Entity Name        ; Example_4_Video_In                          ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                                            ;
++--------------+----------------+---------+-----------------------------------------+----------------------+-----------------+------------------------------------------------------------+
+; Entity Name  ; Component Name ; Version ; Original Source File                    ; Generation File Path ; New Source File ; Message                                                    ;
++--------------+----------------+---------+-----------------------------------------+----------------------+-----------------+------------------------------------------------------------+
+; Video_System ; qsys           ; 12.0    ; Video_System/synthesis/Video_System.qip ; Video_System.qsys    ;                 ; Error upgrading Platform Designer file "Video_System.qsys" ;
++--------------+----------------+---------+-----------------------------------------+----------------------+-----------------+------------------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "Video_System.qsys" to "Video_System.BAK.qsys"
+Info (11902): Backing up file "Video_System/synthesis/Video_System.v" to "Video_System.BAK.v"
+Info (11837): Started upgrading IP component qsys with file "Video_System.qsys"
+Info: 2018.10.31.11:32:22 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2018.10.31.11:32:23 Info: Upgrading from core type Nios II (Classic) Processor with version 12.0 to core type Nios II Processor with version 18.0
+Info: 2018.10.31.11:32:24 Info: Migration Successful
+Info: 2018.10.31.11:32:24 Info: Finished upgrading the ip cores
+Info: 2018.10.31.11:32:40 Info: Saving generation log to I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System
+Info: 2018.10.31.11:32:41 Info: Starting: Create simulation model
+Info: 2018.10.31.11:32:41 Info: qsys-generate "I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System.qsys" --simulation=VERILOG --allow-mixed-language-simulation --output-directory="I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System\simulation" --family="Cyclone IV E" --part=EP4CE115F29C8
+Info: 2018.10.31.11:32:41 Info: Loading verilog
+Info: 2018.10.31.11:32:41 Info: Reading input file
+Info: 2018.10.31.11:32:41 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module AV_Config
+Info: 2018.10.31.11:32:41 Info: Adding CPU [altera_nios2_gen2 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module CPU
+Info: 2018.10.31.11:32:41 Info: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Chroma_Resampler
+Info: 2018.10.31.11:32:41 Info: Adding Clock_Signals [altera_up_clocks 12.0]
+Warning: 2018.10.31.11:32:41 Warning: Clock_Signals: Component type altera_up_clocks is not in the library
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Clock_Signals
+Info: 2018.10.31.11:32:41 Info: Adding Color_Space_Converter [altera_up_avalon_video_csc 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Color_Space_Converter
+Info: 2018.10.31.11:32:41 Info: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Dual_Clock_FIFO
+Info: 2018.10.31.11:32:41 Info: Adding Onchip_Memory [altera_avalon_onchip_memory2 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Onchip_Memory
+Info: 2018.10.31.11:32:41 Info: Adding Pixel_Buffer [altera_up_avalon_sram 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Pixel_Buffer
+Info: 2018.10.31.11:32:41 Info: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Pixel_Buffer_DMA
+Info: 2018.10.31.11:32:41 Info: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Pixel_RGB_Resampler
+Info: 2018.10.31.11:32:41 Info: Adding Pixel_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Pixel_Scaler
+Info: 2018.10.31.11:32:41 Info: Adding VGA_Controller [altera_up_avalon_video_vga_controller 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module VGA_Controller
+Info: 2018.10.31.11:32:41 Info: Adding Video_Clipper [altera_up_avalon_video_clipper 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Video_Clipper
+Info: 2018.10.31.11:32:41 Info: Adding Video_DMA [altera_up_avalon_video_dma_controller 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Video_DMA
+Info: 2018.10.31.11:32:41 Info: Adding Video_In_Decoder [altera_up_avalon_video_decoder 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Video_In_Decoder
+Info: 2018.10.31.11:32:41 Info: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Video_RGB_Resampler
+Info: 2018.10.31.11:32:41 Info: Adding Video_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module Video_Scaler
+Info: 2018.10.31.11:32:41 Info: Adding clk [clock_source 18.0]
+Info: 2018.10.31.11:32:41 Info: Parameterizing module clk
+Info: 2018.10.31.11:32:41 Info: Building connections
+Info: 2018.10.31.11:32:41 Info: Parameterizing connections
+Info: 2018.10.31.11:32:41 Info: Validating
+Info: 2018.10.31.11:32:42 Info: Done reading input file
+Info: 2018.10.31.11:32:44 Info: Video_System.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Warning: 2018.10.31.11:32:44 Error: Video_System.Clock_Signals: Component altera_up_clocks 12.0 not found or could not be instantiated
+2018.10.31.11:32:44 Info: Video_System.Color_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+2018.10.31.11:32:44 Info: Video_System.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+2018.10.31.11:32:44 Info: Video_System.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+2018.10.31.11:32:44 Warning: Video_System.VGA_Controller: Unable to verify clock frequency. Make sure the VGA clock has a frequency of 25.0 MHz.
+2018.10.31.11:32:44 Info: Video_System.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+2018.10.31.11:32:44 Info: Video_System.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+2018.10.31.11:32:44 Info: Video_System.Video_In_Decoder: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+2018.10.31.11:32:44 Info: Video_System.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+2018.10.31.11:32:44 Info: Video_System.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+2018.10.31.11:32:44 Info: Video_System.Pixel_Scaler.avalon_scaler_source
+Error: 2018.10.31.11:32:44 Error: Video_System.AV_Config: AV_Config.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Chroma_Resampler: Chroma_Resampler.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Color_Space_Converter: Color_Space_Converter.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Pixel_Buffer: Pixel_Buffer.clk must be connected to a clock output
+2018.10.31.11:32:44 Error: Video_System.Pixel_Buffer_DMA: Pixel_Buffer_DMA.clk must be connected to a clock output
+2018.10.31.11:32:44 Error: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.clk must be connected to a clock output
+2018.10.31.11:32:44 Error: Video_System.Pixel_Scaler: Pixel_Scaler.clk must be connected to a clock output
+2018.10.31.11:32:44 Error: Video_System.VGA_Controller: VGA_Controller.clk must be connected to a clock output
+2018.10.31.11:32:44 Error: Video_System.Video_Clipper: Video_Clipper.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_DMA: Video_DMA.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_In_Decoder: Video_In_Decoder.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.clk must be connected to a clock output
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_Scaler: Video_Scaler.clk must be connected to a clock output
+Warning: 2018.10.31.11:32:44 Warning: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+Warning: 2018.10.31.11:32:44 Warning: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+Error: 2018.10.31.11:32:44 Error: Video_System.AV_Config: AV_Config.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Chroma_Resampler: Chroma_Resampler.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Color_Space_Converter: Color_Space_Converter.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_in must be connected to a reset source
+2018.10.31.11:32:44 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_out must be connected to a reset source
+2018.10.31.11:32:44 Error: Video_System.Pixel_Buffer: Pixel_Buffer.reset must be connected to a reset source
+2018.10.31.11:32:44 Error: Video_System.Pixel_Buffer_DMA: Pixel_Buffer_DMA.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Pixel_Scaler: Pixel_Scaler.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.VGA_Controller: VGA_Controller.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_Clipper: Video_Clipper.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_DMA: Video_DMA.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_In_Decoder: Video_In_Decoder.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.reset must be connected to a reset source
+Error: 2018.10.31.11:32:44 Error: Video_System.Video_Scaler: Video_Scaler.reset must be connected to a reset source
+Info: 2018.10.31.11:32:45 Info: Video_System: Generating Video_System "Video_System" for SIM_VERILOG
+Error: 2018.10.31.11:32:47 Error: Video_DMA_avalon_dma_master_translator.avalon_anti_master_0: Cannot connect Video_DMA_avalon_dma_master_translator.reset because Video_DMA.reset is not connected. If Video_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:32:47 Error: Pixel_Buffer_DMA_avalon_pixel_dma_master_translator.avalon_anti_master_0: Cannot connect Pixel_Buffer_DMA_avalon_pixel_dma_master_translator.reset because Pixel_Buffer_DMA.reset is not connected. If Pixel_Buffer_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:32:47 Error: Pixel_Buffer_avalon_sram_slave_translator.avalon_anti_slave_0: Cannot connect Pixel_Buffer_avalon_sram_slave_translator.reset because Pixel_Buffer.reset is not connected. If Pixel_Buffer.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:32:47 Error: AV_Config_avalon_av_config_slave_translator.avalon_anti_slave_0: Cannot connect AV_Config_avalon_av_config_slave_translator.reset because AV_Config.reset is not connected. If AV_Config.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:32:47 Error: Pixel_Buffer_DMA_avalon_control_slave_translator.avalon_anti_slave_0: Cannot connect Pixel_Buffer_DMA_avalon_control_slave_translator.reset because Pixel_Buffer_DMA.reset is not connected. If Pixel_Buffer_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:32:47 Error: Video_DMA_avalon_dma_control_slave_translator.avalon_anti_slave_0: Cannot connect Video_DMA_avalon_dma_control_slave_translator.reset because Video_DMA.reset is not connected. If Video_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Warning: 2018.10.31.11:32:52 Warning: CPU.irq: Cannot connect clock for irq_mapper.sender
+Info: 2018.10.31.11:32:53 Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
+Error: 2018.10.31.11:32:53 Error: avalon_st_adapter.in_0: Cannot connect clock because Pixel_Scaler.avalon_scaler_source has no associated clock
+Error: 2018.10.31.11:32:53 Error: avalon_st_adapter.in_0: Cannot connect reset for avalon_st_adapter.in_0 because Pixel_Scaler.avalon_scaler_source has no associated reset
+Error: 2018.10.31.11:32:53 Error: Cannot find clock for CPU.clk. If CPU.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller in the generated RTL.
+Error: 2018.10.31.11:32:53 Error: Cannot find clock for Onchip_Memory.clk1. If Onchip_Memory.clk1 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_001, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_001 in the generated RTL.
+Error: 2018.10.31.11:32:53 Error: Cannot find clock for irq_mapper.clk. If irq_mapper.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_002, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_002 in the generated RTL.
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk:clk_out (clk)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:clk:clk (clk)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for Onchip_Memory:clk1:clk (clk)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for Dual_Clock_FIFO:clock_stream_in:clk_stream_in (clk)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for Dual_Clock_FIFO:clock_stream_out:clk_stream_out (clk)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:32:57 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:32:57 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Info: com.altera.hdlwriter.EntityWritingException: Connection  is not connected Video_DMA:avalon_dma_master -> ?
+Info:     at com.altera.hdlwriter.internal.OldEntityWriterInternal.addConnection(OldEntityWriterInternal.java:438)
+Info:     at com.altera.hdlwriter.internal.OldEntityWriterInternal.writeHDLInternal(OldEntityWriterInternal.java:122)
+Info:     at com.altera.hdlwriter.internal.EntityWriter.writeHDL(EntityWriter.java:40)
+Info:     at com.altera.sopc.generator.EnsembleGenerationFileSet2.generate(EnsembleGenerationFileSet2.java:61)
+Info:     at com.altera.sopc.generator.FileSet2.generate(FileSet2.java:150)
+Info:     at com.altera.sopc.generator.Sellafield.generate(Sellafield.java:366)
+Info:     at com.altera.sopcmodel.sbtools.sbgenerate.SbGenerate.performGeneration(SbGenerate.java:521)
+Info:     at com.altera.sopcmodel.sbtools.sbgenerate.SbGenerate.act(SbGenerate.java:467)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:718)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:730)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.generateSimulation(QsysGenerationTask.java:503)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.generate(QsysGenerationTask.java:291)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.run(QsysGenerationTask.java:127)
+Info:     at com.altera.qsys.generate.QsysGenerate.createGenerationTaskOuter(QsysGenerate.java:699)
+Info:     at com.altera.qsys.generate.QsysGenerate.runGenerationFlow(QsysGenerate.java:628)
+Info:     at com.altera.qsys.generate.QsysGenerate.act(QsysGenerate.java:389)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:718)
+Info:     at com.altera.qsys.generate.QsysGenerate.main(QsysGenerate.java:180)
+Info: 2018.10.31.11:32:57 Info: Video_System: Done "Video_System" with 1 modules, 0 files
+Error: 2018.10.31.11:32:57 Error: qsys-generate failed with exit code 1: 83 Errors, 42 Warnings
+Info: 2018.10.31.11:32:57 Info: Finished: Create simulation model
+Info: 2018.10.31.11:32:57 Info: Starting: Create Modelsim Project.
+Info: 2018.10.31.11:32:57 Info: Doing: ip-make-simscript --spd=I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System\Video_System.spd --output-directory=I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info: Generating the following file(s) for MODELSIM simulator in I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info:     mentor
+Info: 2018.10.31.11:33:01 Info: Generating the following file(s) for VCS simulator in I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info:     synopsys/vcs
+Info: 2018.10.31.11:33:01 Info: Generating the following file(s) for VCSMX simulator in I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info:     synopsys/vcsmx
+Info: 2018.10.31.11:33:01 Info:     synopsys/vcsmx
+Info: 2018.10.31.11:33:01 Info: Generating the following file(s) for NCSIM simulator in I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info:     cadence
+Info: 2018.10.31.11:33:01 Info:     cadence
+Info: 2018.10.31.11:33:01 Info:     cadence
+Info: 2018.10.31.11:33:01 Info: Generating the following file(s) for RIVIERA simulator in I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info:     aldec
+Info: 2018.10.31.11:33:01 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under I:/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/simulation
+Info: 2018.10.31.11:33:01 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2018.10.31.11:33:01 Info: Finished: Create Modelsim Project.
+Info: 2018.10.31.11:33:01 Info: Starting: Create block symbol file (.bsf)
+Info: 2018.10.31.11:33:01 Info: qsys-generate "I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System.qsys" --block-symbol-file --output-directory="I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System" --family="Cyclone IV E" --part=EP4CE115F29C8
+Info: 2018.10.31.11:33:01 Info: Loading verilog
+Info: 2018.10.31.11:33:02 Info: Reading input file
+Info: 2018.10.31.11:33:02 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module AV_Config
+Info: 2018.10.31.11:33:02 Info: Adding CPU [altera_nios2_gen2 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module CPU
+Info: 2018.10.31.11:33:02 Info: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Chroma_Resampler
+Info: 2018.10.31.11:33:02 Info: Adding Clock_Signals [altera_up_clocks 12.0]
+Warning: 2018.10.31.11:33:02 Warning: Clock_Signals: Component type altera_up_clocks is not in the library
+2018.10.31.11:33:02 Info: Parameterizing module Clock_Signals
+2018.10.31.11:33:02 Info: Adding Color_Space_Converter [altera_up_avalon_video_csc 18.0]
+2018.10.31.11:33:02 Info: Parameterizing module Color_Space_Converter
+2018.10.31.11:33:02 Info: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 18.0]
+2018.10.31.11:33:02 Info: Parameterizing module Dual_Clock_FIFO
+2018.10.31.11:33:02 Info: Adding Onchip_Memory [altera_avalon_onchip_memory2 18.0]
+2018.10.31.11:33:02 Info: Parameterizing module Onchip_Memory
+2018.10.31.11:33:02 Info: Adding Pixel_Buffer [altera_up_avalon_sram 18.0]
+2018.10.31.11:33:02 Info: Parameterizing module Pixel_Buffer
+2018.10.31.11:33:02 Info: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Pixel_Buffer_DMA
+Info: 2018.10.31.11:33:02 Info: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Pixel_RGB_Resampler
+Info: 2018.10.31.11:33:02 Info: Adding Pixel_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Pixel_Scaler
+Info: 2018.10.31.11:33:02 Info: Adding VGA_Controller [altera_up_avalon_video_vga_controller 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module VGA_Controller
+Info: 2018.10.31.11:33:02 Info: Adding Video_Clipper [altera_up_avalon_video_clipper 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Video_Clipper
+Info: 2018.10.31.11:33:02 Info: Adding Video_DMA [altera_up_avalon_video_dma_controller 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Video_DMA
+2018.10.31.11:33:02 Info: Adding Video_In_Decoder [altera_up_avalon_video_decoder 18.0]
+2018.10.31.11:33:02 Info: Parameterizing module Video_In_Decoder
+Info: 2018.10.31.11:33:02 Info: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Video_RGB_Resampler
+Info: 2018.10.31.11:33:02 Info: Adding Video_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module Video_Scaler
+Info: 2018.10.31.11:33:02 Info: Adding clk [clock_source 18.0]
+Info: 2018.10.31.11:33:02 Info: Parameterizing module clk
+Info: 2018.10.31.11:33:02 Info: Building connections
+Info: 2018.10.31.11:33:02 Info: Parameterizing connections
+Info: 2018.10.31.11:33:02 Info: Validating
+Info: 2018.10.31.11:33:03 Info: Done reading input file
+Info: 2018.10.31.11:33:04 Info: Video_System.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Error: 2018.10.31.11:33:04 Error: Video_System.Clock_Signals: Component altera_up_clocks 12.0 not found or could not be instantiated
+Info: 2018.10.31.11:33:04 Info: Video_System.Color_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: 2018.10.31.11:33:04 Info: Video_System.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: 2018.10.31.11:33:04 Info: Video_System.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Warning: 2018.10.31.11:33:04 Warning: Video_System.VGA_Controller: Unable to verify clock frequency. Make sure the VGA clock has a frequency of 25.0 MHz.
+2018.10.31.11:33:04 Info: Video_System.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+2018.10.31.11:33:04 Info: Video_System.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+2018.10.31.11:33:04 Info: Video_System.Video_In_Decoder: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+2018.10.31.11:33:04 Info: Video_System.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+2018.10.31.11:33:04 Info: Video_System.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+2018.10.31.11:33:04 Info: Video_System.Pixel_Scaler.avalon_scaler_source
+Error: 2018.10.31.11:33:04 Error: Video_System.Video_Clipper: Video_Clipper.clk must be connected to a clock output
+2018.10.31.11:33:04 Error: Video_System.Video_DMA: Video_DMA.clk must be connected to a clock output
+2018.10.31.11:33:04 Error: Video_System.Video_In_Decoder: Video_In_Decoder.clk must be connected to a clock output
+Warning: 2018.10.31.11:33:04 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.clk must be connected to a clock output
+2018.10.31.11:33:04 Error: Video_System.Video_Scaler: Video_Scaler.clk must be connected to a clock output
+2018.10.31.11:33:04 Warning: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+2018.10.31.11:33:04 Warning: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+2018.10.31.11:33:04 Error: Video_System.AV_Config: AV_Config.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Chroma_Resampler: Chroma_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Color_Space_Converter: Color_Space_Converter.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_in must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_out must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Pixel_Buffer: Pixel_Buffer.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Pixel_Buffer_DMA: Pixel_Buffer_DMA.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Pixel_Scaler: Pixel_Scaler.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.VGA_Controller: VGA_Controller.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Video_Clipper: Video_Clipper.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Video_DMA: Video_DMA.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Video_In_Decoder: Video_In_Decoder.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:04 Error: Video_System.Video_Scaler: Video_Scaler.reset must be connected to a reset source
+Info: 2018.10.31.11:33:05 Info: qsys-generate succeeded.
+Info: 2018.10.31.11:33:05 Info: Finished: Create block symbol file (.bsf)
+Info: 2018.10.31.11:33:05 Info:
+Info: 2018.10.31.11:33:05 Info: Starting: Create HDL design files for synthesis
+Info: 2018.10.31.11:33:05 Info: qsys-generate "I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System.qsys" --synthesis=VERILOG --output-directory="I:\Repository\Demo Projects\Video_Demos_using_Qsys\DE2-115\Example_4_Video_In\verilog\Video_System\synthesis" --family="Cyclone IV E" --part=EP4CE115F29C8
+Info: 2018.10.31.11:33:05 Info: Loading verilog
+Info: 2018.10.31.11:33:06 Info: Reading input file
+Info: 2018.10.31.11:33:06 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module AV_Config
+Info: 2018.10.31.11:33:06 Info: Adding CPU [altera_nios2_gen2 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module CPU
+Info: 2018.10.31.11:33:06 Info: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Chroma_Resampler
+Info: 2018.10.31.11:33:06 Info: Adding Clock_Signals [altera_up_clocks 12.0]
+Warning: 2018.10.31.11:33:06 Warning: Clock_Signals: Component type altera_up_clocks is not in the library
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Clock_Signals
+2018.10.31.11:33:06 Info: Adding Color_Space_Converter [altera_up_avalon_video_csc 18.0]
+2018.10.31.11:33:06 Info: Parameterizing module Color_Space_Converter
+2018.10.31.11:33:06 Info: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 18.0]
+2018.10.31.11:33:06 Info: Parameterizing module Dual_Clock_FIFO
+Info: 2018.10.31.11:33:06 Info: Adding Onchip_Memory [altera_avalon_onchip_memory2 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Onchip_Memory
+Info: 2018.10.31.11:33:06 Info: Adding Pixel_Buffer [altera_up_avalon_sram 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Pixel_Buffer
+Info: 2018.10.31.11:33:06 Info: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Pixel_Buffer_DMA
+Info: 2018.10.31.11:33:06 Info: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Pixel_RGB_Resampler
+Info: 2018.10.31.11:33:06 Info: Adding Pixel_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Pixel_Scaler
+Info: 2018.10.31.11:33:06 Info: Adding VGA_Controller [altera_up_avalon_video_vga_controller 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module VGA_Controller
+Info: 2018.10.31.11:33:06 Info: Adding Video_Clipper [altera_up_avalon_video_clipper 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Video_Clipper
+Info: 2018.10.31.11:33:06 Info: Adding Video_DMA [altera_up_avalon_video_dma_controller 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Video_DMA
+2018.10.31.11:33:06 Info: Adding Video_In_Decoder [altera_up_avalon_video_decoder 18.0]
+2018.10.31.11:33:06 Info: Parameterizing module Video_In_Decoder
+Info: 2018.10.31.11:33:06 Info: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Video_RGB_Resampler
+Info: 2018.10.31.11:33:06 Info: Adding Video_Scaler [altera_up_avalon_video_scaler 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module Video_Scaler
+Info: 2018.10.31.11:33:06 Info: Adding clk [clock_source 18.0]
+Info: 2018.10.31.11:33:06 Info: Parameterizing module clk
+Info: 2018.10.31.11:33:06 Info: Building connections
+Info: 2018.10.31.11:33:06 Info: Parameterizing connections
+Info: 2018.10.31.11:33:06 Info: Validating
+Info: 2018.10.31.11:33:07 Info: Done reading input file
+Info: 2018.10.31.11:33:08 Info: Video_System.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Error: 2018.10.31.11:33:08 Error: Video_System.Clock_Signals: Component altera_up_clocks 12.0 not found or could not be instantiated
+Info: 2018.10.31.11:33:08 Info: Video_System.Color_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: 2018.10.31.11:33:08 Info: Video_System.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: 2018.10.31.11:33:08 Info: Video_System.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Error: 2018.10.31.11:33:08 Error: Video_System.AV_Config: AV_Config.clk must be connected to a clock output
+Error: 2018.10.31.11:33:08 Error: Video_System.Chroma_Resampler: Chroma_Resampler.clk must be connected to a clock output
+Error: 2018.10.31.11:33:08 Error: Video_System.Color_Space_Converter: Color_Space_Converter.clk must be connected to a clock output
+Error: 2018.10.31.11:33:08 Error: Video_System.Pixel_Buffer: Pixel_Buffer.clk must be connected to a clock output
+Error: 2018.10.31.11:33:08 Error: Video_System.Pixel_Buffer_DMA: Pixel_Buffer_DMA.clk must be connected to a clock output
+Warning: 2018.10.31.11:33:08 Error: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Pixel_Scaler: Pixel_Scaler.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.VGA_Controller: VGA_Controller.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Video_Clipper: Video_Clipper.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Video_DMA: Video_DMA.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Video_In_Decoder: Video_In_Decoder.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.clk must be connected to a clock output
+2018.10.31.11:33:08 Error: Video_System.Video_Scaler: Video_Scaler.clk must be connected to a clock output
+2018.10.31.11:33:08 Warning: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+2018.10.31.11:33:08 Warning: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.avalon_rgb_slave must be connected to an Avalon-MM master
+2018.10.31.11:33:08 Error: Video_System.AV_Config: AV_Config.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Chroma_Resampler: Chroma_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Color_Space_Converter: Color_Space_Converter.reset must be connected to a reset source
+Error: 2018.10.31.11:33:08 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_in must be connected to a reset source
+Error: 2018.10.31.11:33:08 Error: Video_System.Dual_Clock_FIFO: Dual_Clock_FIFO.reset_stream_out must be connected to a reset source
+Error: 2018.10.31.11:33:08 Error: Video_System.Pixel_Buffer: Pixel_Buffer.reset must be connected to a reset source
+Error: 2018.10.31.11:33:08 Error: Video_System.Pixel_Buffer_DMA: Pixel_Buffer_DMA.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Pixel_RGB_Resampler: Pixel_RGB_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Pixel_Scaler: Pixel_Scaler.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.VGA_Controller: VGA_Controller.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Video_Clipper: Video_Clipper.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Video_DMA: Video_DMA.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Video_In_Decoder: Video_In_Decoder.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Video_RGB_Resampler: Video_RGB_Resampler.reset must be connected to a reset source
+2018.10.31.11:33:08 Error: Video_System.Video_Scaler: Video_Scaler.reset must be connected to a reset source
+Info: 2018.10.31.11:33:09 Info: Video_System: Generating Video_System "Video_System" for QUARTUS_SYNTH
+Error: 2018.10.31.11:33:10 Error: Video_DMA_avalon_dma_master_translator.avalon_anti_master_0: Cannot connect Video_DMA_avalon_dma_master_translator.reset because Video_DMA.reset is not connected. If Video_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:33:10 Error: Pixel_Buffer_DMA_avalon_pixel_dma_master_translator.avalon_anti_master_0: Cannot connect Pixel_Buffer_DMA_avalon_pixel_dma_master_translator.reset because Pixel_Buffer_DMA.reset is not connected. If Pixel_Buffer_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:33:10 Error: Pixel_Buffer_avalon_sram_slave_translator.avalon_anti_slave_0: Cannot connect Pixel_Buffer_avalon_sram_slave_translator.reset because Pixel_Buffer.reset is not connected. If Pixel_Buffer.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:33:10 Error: AV_Config_avalon_av_config_slave_translator.avalon_anti_slave_0: Cannot connect AV_Config_avalon_av_config_slave_translator.reset because AV_Config.reset is not connected. If AV_Config.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:33:10 Error: Pixel_Buffer_DMA_avalon_control_slave_translator.avalon_anti_slave_0: Cannot connect Pixel_Buffer_DMA_avalon_control_slave_translator.reset because Pixel_Buffer_DMA.reset is not connected. If Pixel_Buffer_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: 2018.10.31.11:33:10 Error: Video_DMA_avalon_dma_control_slave_translator.avalon_anti_slave_0: Cannot connect Video_DMA_avalon_dma_control_slave_translator.reset because Video_DMA.reset is not connected. If Video_DMA.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Warning: 2018.10.31.11:33:12 Warning: CPU.irq: Cannot connect clock for irq_mapper.sender
+Info: 2018.10.31.11:33:13 Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
+Error: 2018.10.31.11:33:13 Error: avalon_st_adapter.in_0: Cannot connect clock because Pixel_Scaler.avalon_scaler_source has no associated clock
+Error: 2018.10.31.11:33:13 Error: avalon_st_adapter.in_0: Cannot connect reset for avalon_st_adapter.in_0 because Pixel_Scaler.avalon_scaler_source has no associated reset
+Error: 2018.10.31.11:33:13 Error: Cannot find clock for CPU.clk. If CPU.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller in the generated RTL.
+Error: 2018.10.31.11:33:13 Error: Cannot find clock for Onchip_Memory.clk1. If Onchip_Memory.clk1 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_001, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_001 in the generated RTL.
+Error: 2018.10.31.11:33:13 Error: Cannot find clock for irq_mapper.clk. If irq_mapper.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_002, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_002 in the generated RTL.
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk:clk_out (clk)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:clk:clk (clk)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for Onchip_Memory:clk1:clk (clk)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for Dual_Clock_FIFO:clock_stream_in:clk_stream_in (clk)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for Dual_Clock_FIFO:clock_stream_out:clk_stream_out (clk)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for clk:clk_reset:reset_n_out (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Warning: 2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+2018.10.31.11:33:16 Warning: Video_System: "No matching role found for CPU:debug_reset_request:debug_reset_request (reset)"
+Info: com.altera.hdlwriter.EntityWritingException: Connection  is not connected Video_DMA:avalon_dma_master -> ?
+Info:     at com.altera.hdlwriter.internal.OldEntityWriterInternal.addConnection(OldEntityWriterInternal.java:438)
+Info:     at com.altera.hdlwriter.internal.OldEntityWriterInternal.writeHDLInternal(OldEntityWriterInternal.java:122)
+Info:     at com.altera.hdlwriter.internal.EntityWriter.writeHDL(EntityWriter.java:40)
+Info:     at com.altera.sopc.generator.EnsembleGenerationFileSet2.generate(EnsembleGenerationFileSet2.java:61)
+Info:     at com.altera.sopc.generator.FileSet2.generate(FileSet2.java:150)
+Info:     at com.altera.sopc.generator.Sellafield.generate(Sellafield.java:366)
+Info:     at com.altera.sopcmodel.sbtools.sbgenerate.SbGenerate.performGeneration(SbGenerate.java:521)
+Info:     at com.altera.sopcmodel.sbtools.sbgenerate.SbGenerate.act(SbGenerate.java:467)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:718)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:730)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.generateSynthesis(QsysGenerationTask.java:597)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.generate(QsysGenerationTask.java:374)
+Info:     at com.altera.sopceditor.tools.generation.QsysGenerationTask.run(QsysGenerationTask.java:127)
+Info:     at com.altera.qsys.generate.QsysGenerate.createGenerationTaskOuter(QsysGenerate.java:699)
+Info:     at com.altera.qsys.generate.QsysGenerate.runGenerationFlow(QsysGenerate.java:628)
+Info:     at com.altera.qsys.generate.QsysGenerate.act(QsysGenerate.java:389)
+Info:     at com.altera.utilities.AltCmdLineToolBase.runTheTool(AltCmdLineToolBase.java:718)
+Info:     at com.altera.qsys.generate.QsysGenerate.main(QsysGenerate.java:180)
+Info: 2018.10.31.11:33:16 Info: Video_System: Done "Video_System" with 1 modules, 0 files
+Error: 2018.10.31.11:33:16 Error: qsys-generate failed with exit code 1: 83 Errors, 42 Warnings
+Info: 2018.10.31.11:33:16 Info: Finished: Create HDL design files for synthesis
+Info (11904): Restoring file "Video_System.BAK.qsys" to "Video_System.qsys"
+Error (14923): Error upgrading Platform Designer file "Video_System.qsys"
+Error (11133): IP component qsys with file "Video_System.qsys" upgrade failed
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/18.0/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 121 errors, 53 warnings
+    Error: Peak virtual memory: 4902 megabytes
+    Error: Processing ended: Wed Oct 31 11:33:27 2018
+    Error: Elapsed time: 00:01:48
+    Error: Total CPU time (on all processors): 00:03:35
+
+

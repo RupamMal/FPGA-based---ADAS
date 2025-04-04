@@ -1,0 +1,297 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/" --output-directory="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/" --report-file="bsf:C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.bsf" --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.qsys"
+Progress: Loading verilog/Video_System.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_Memory
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Video_In_Decoder [altera_up_avalon_video_decoder 13.0]
+Progress: Parameterizing module Video_In_Decoder
+Progress: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 13.0]
+Progress: Parameterizing module Chroma_Resampler
+Progress: Adding Color_Space_Converter [altera_up_avalon_video_csc 13.0]
+Progress: Parameterizing module Color_Space_Converter
+Progress: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Video_RGB_Resampler
+Progress: Adding Video_Clipper [altera_up_avalon_video_clipper 13.0]
+Progress: Parameterizing module Video_Clipper
+Progress: Adding Video_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Video_Scaler
+Progress: Adding Video_DMA [altera_up_avalon_video_dma_controller 13.0]
+Progress: Parameterizing module Video_DMA
+Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module AV_Config
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding Clock_Signals [altera_up_clocks 13.0]
+Progress: Parameterizing module Clock_Signals
+Progress: Adding video_edge_detection_0 [altera_up_avalon_video_edge_detection 13.0]
+Progress: Parameterizing module video_edge_detection_0
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Video_System.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: Video_System.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: Video_System.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: Video_System.Video_In_Decoder: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+Info: Video_System.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Info: Video_System.Color_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: Video_System.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 8 (bits) x 1 (planes)
+Info: Video_System.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: Video_System.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: Video_System.CPU: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: Video_System.video_rgb_resampler_0: RGB Resampling: 8 (bits) x 1 (planes) -> 16 (bits) x 1 (planes)
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/" --output-directory="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/" --file-set=QUARTUS_SYNTH --report-file="sopcinfo:C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.sopcinfo" --report-file="html:C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.html" --report-file="qip:C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/Video_System.qip" --report-file="cmp:C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.cmp" --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System.qsys" --language=VERILOG
+Progress: Loading verilog/Video_System.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_Memory
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Video_In_Decoder [altera_up_avalon_video_decoder 13.0]
+Progress: Parameterizing module Video_In_Decoder
+Progress: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 13.0]
+Progress: Parameterizing module Chroma_Resampler
+Progress: Adding Color_Space_Converter [altera_up_avalon_video_csc 13.0]
+Progress: Parameterizing module Color_Space_Converter
+Progress: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Video_RGB_Resampler
+Progress: Adding Video_Clipper [altera_up_avalon_video_clipper 13.0]
+Progress: Parameterizing module Video_Clipper
+Progress: Adding Video_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Video_Scaler
+Progress: Adding Video_DMA [altera_up_avalon_video_dma_controller 13.0]
+Progress: Parameterizing module Video_DMA
+Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module AV_Config
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding Clock_Signals [altera_up_clocks 13.0]
+Progress: Parameterizing module Clock_Signals
+Progress: Adding video_edge_detection_0 [altera_up_avalon_video_edge_detection 13.0]
+Progress: Parameterizing module video_edge_detection_0
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Video_System.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: Video_System.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: Video_System.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: Video_System.Video_In_Decoder: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+Info: Video_System.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Info: Video_System.Color_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: Video_System.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 8 (bits) x 1 (planes)
+Info: Video_System.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: Video_System.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: Video_System.CPU: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: Video_System.video_rgb_resampler_0: RGB Resampling: 8 (bits) x 1 (planes) -> 16 (bits) x 1 (planes)
+Info: Video_System: Generating Video_System "Video_System" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 20 modules, 80 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 30 modules, 120 connections
+Info: merlin_domain_transform: After transform: 48 modules, 240 connections
+Info: merlin_router_transform: After transform: 58 modules, 280 connections
+Info: merlin_burst_transform: After transform: 59 modules, 284 connections
+Info: reset_adaptation_transform: After transform: 63 modules, 229 connections
+Info: merlin_network_to_switch_transform: After transform: 82 modules, 269 connections
+Info: merlin_width_transform: After transform: 84 modules, 275 connections
+Info: merlin_mm_transform: After transform: 84 modules, 275 connections
+Info: merlin_interrupt_mapper_transform: After transform: 85 modules, 278 connections
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: Video_System: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: Onchip_Memory: Starting RTL generation for module 'Video_System_Onchip_Memory'
+Info: Onchip_Memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Video_System_Onchip_Memory --dir=C:/Users/HP/AppData/Local/Temp/alt7837_5812041327644271437.dir/0001_Onchip_Memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/HP/AppData/Local/Temp/alt7837_5812041327644271437.dir/0001_Onchip_Memory_gen//Video_System_Onchip_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_Memory: Done RTL generation for module 'Video_System_Onchip_Memory'
+Info: Onchip_Memory: "Video_System" instantiated altera_avalon_onchip_memory2 "Onchip_Memory"
+Info: Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: Dual_Clock_FIFO: "Video_System" instantiated altera_up_avalon_video_dual_clock_buffer "Dual_Clock_FIFO"
+Info: Pixel_Buffer: Starting Generation of SRAM or SSRAM Controller
+Info: Pixel_Buffer: "Video_System" instantiated altera_up_avalon_sram "Pixel_Buffer"
+Info: Pixel_Buffer_DMA: Starting Generation of VGA Pixel Buffer
+Info: Pixel_Buffer_DMA: "Video_System" instantiated altera_up_avalon_video_pixel_buffer_dma "Pixel_Buffer_DMA"
+Info: Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: Pixel_RGB_Resampler: "Video_System" instantiated altera_up_avalon_video_rgb_resampler "Pixel_RGB_Resampler"
+Info: Pixel_Scaler: Starting Generation of Video Scaler
+Info: Pixel_Scaler: "Video_System" instantiated altera_up_avalon_video_scaler "Pixel_Scaler"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "Video_System" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: Video_In_Decoder: Starting Generation of Video In Decoder
+Info: Video_In_Decoder: "Video_System" instantiated altera_up_avalon_video_decoder "Video_In_Decoder"
+Info: Chroma_Resampler: Starting Generation of Chroma Resampler
+Info: Chroma_Resampler: "Video_System" instantiated altera_up_avalon_video_chroma_resampler "Chroma_Resampler"
+Info: Color_Space_Converter: Starting Generation of Colour Space Converter
+Info: Color_Space_Converter: "Video_System" instantiated altera_up_avalon_video_csc "Color_Space_Converter"
+Info: Video_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: Video_RGB_Resampler: "Video_System" instantiated altera_up_avalon_video_rgb_resampler "Video_RGB_Resampler"
+Info: Video_Clipper: Starting generation of the video clipper
+Info: Video_Clipper: "Video_System" instantiated altera_up_avalon_video_clipper "Video_Clipper"
+Info: Video_Scaler: Starting Generation of Video Scaler
+Info: Video_Scaler: "Video_System" instantiated altera_up_avalon_video_scaler "Video_Scaler"
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_up_video_scaler_shrink.v
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_up_video_scaler_multiply_width.v
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_up_video_scaler_multiply_height.v
+Info: Video_DMA: Starting Generation of Video DMA Controller
+Info: Video_DMA: "Video_System" instantiated altera_up_avalon_video_dma_controller "Video_DMA"
+Info: AV_Config: Starting Generation of Audio and Video Config
+Info: AV_Config: "Video_System" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
+Info: CPU: Starting RTL generation for module 'Video_System_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=Video_System_CPU --dir=C:/Users/HP/AppData/Local/Temp/alt7837_5812041327644271437.dir/0016_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/HP/AppData/Local/Temp/alt7837_5812041327644271437.dir/0016_CPU_gen//Video_System_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2018.11.02 14:49:59 (*) Starting Nios II generation
+Info: CPU: # 2018.11.02 14:49:59 (*)   Checking for plaintext license.
+Info: CPU: # 2018.11.02 14:50:02 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2018.11.02 14:50:02 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2018.11.02 14:50:02 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2018.11.02 14:50:02 (*)   Plaintext license not found.
+Info: CPU: # 2018.11.02 14:50:02 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2018.11.02 14:50:02 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2018.11.02 14:50:02 (*)   Creating all objects for CPU
+Info: CPU: # 2018.11.02 14:50:04 (*)   Generating RTL from CPU objects
+Info: CPU: # 2018.11.02 14:50:04 (*)   Creating plain-text RTL
+Info: CPU: # 2018.11.02 14:50:08 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'Video_System_CPU'
+Info: CPU: "Video_System" instantiated altera_nios2_qsys "CPU"
+Info: Clock_Signals: Starting Generation of Required Clocks for DE-Series Boards
+Info: Clock_Signals: "Video_System" instantiated altera_up_clocks "Clock_Signals"
+Info: video_edge_detection_0: Starting Generation of Video In Edge Detection
+Info: video_edge_detection_0: "Video_System" instantiated altera_up_avalon_video_edge_detection "video_edge_detection_0"
+Info: video_rgb_resampler_0: Starting Generation of Video RGB Resampler
+Info: video_rgb_resampler_0: "Video_System" instantiated altera_up_avalon_video_rgb_resampler "video_rgb_resampler_0"
+Info: CPU_instruction_master_translator: "Video_System" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "Video_System" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "Video_System" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "Video_System" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "Video_System" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "Video_System" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "Video_System" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "Video_System" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "Video_System" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "Video_System" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "Video_System" instantiated altera_merlin_router "id_router_003"
+Info: burst_adapter: "Video_System" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "Video_System" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "Video_System" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "Video_System" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "Video_System" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "Video_System" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "Video_System" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "Video_System" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_003: "Video_System" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "Video_System" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "Video_System" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "Video_System" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/HP/Desktop/Repository/Demo Projects/Video_Demos_using_Qsys/DE2-115/Example_4_Video_In/verilog/Video_System/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "Video_System" instantiated altera_irq_mapper "irq_mapper"
+Info: Video_System: Done Video_System" with 44 modules, 144 files, 2379744 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
